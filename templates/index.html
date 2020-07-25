@@ -1,0 +1,15 @@
+{% extends 'outline.html' %}
+
+{% block body %}
+    <form method = 'POST'>
+        <label for="username">Enter Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+    </form>
+
+    {% if profile %}
+        <a href={{profile}}> {{profile}} </a>
+    {% else %}
+        type in your username
+    {% endif %}
+
+{% endblock body %}

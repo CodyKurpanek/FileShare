@@ -14,3 +14,4 @@ if not password:
     password = input("enter password\n")
 
 print (isValidPassword(password))
+
